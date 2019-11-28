@@ -10,8 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        ZStack {
+            Image("barbarian")
+            Text("Nogitsune Takeshi")
+                .font(.title)
+                .foregroundColor(.black)
+        }
+        .lineLimit(1)
     }
 }
 
