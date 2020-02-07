@@ -14,7 +14,15 @@ struct ContentView: View {
         
 //        AnchorKeyView()
         
-        SPrefKeyView() // Simulated scrolling
+//        SPrefKeyView() // Simulated scrolling
+        
+        ScrollingGridStackView { _, _  in
+            Rectangle()
+            .fill(Color.green)
+            .frame(width:100, height: 100)
+        }
+        
+        
         
         
         

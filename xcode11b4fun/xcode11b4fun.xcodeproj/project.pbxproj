@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		386FEB6123ECFF0B00A13A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB6023ECFF0B00A13A5C /* AppDelegate.swift */; };
 		386FEB6323ECFF0B00A13A5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB6223ECFF0B00A13A5C /* SceneDelegate.swift */; };
-		386FEB6523ECFF0B00A13A5C /* PrefKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB6423ECFF0B00A13A5C /* PrefKeyView.swift */; };
 		386FEB6723ECFF0D00A13A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FEB6623ECFF0D00A13A5C /* Assets.xcassets */; };
 		386FEB6A23ECFF0D00A13A5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386FEB6923ECFF0D00A13A5C /* Preview Assets.xcassets */; };
 		386FEB6D23ECFF0D00A13A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386FEB6B23ECFF0D00A13A5C /* LaunchScreen.storyboard */; };
 		386FEB7823ECFF0D00A13A5C /* xcode11b4funTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB7723ECFF0D00A13A5C /* xcode11b4funTests.swift */; };
 		386FEB8323ECFF0D00A13A5C /* xcode11b4funUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB8223ECFF0D00A13A5C /* xcode11b4funUITests.swift */; };
-		386FEB9123ED704400A13A5C /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9023ED704400A13A5C /* GridStack.swift */; };
 		386FEB9323ED768E00A13A5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9223ED768E00A13A5C /* ContentView.swift */; };
-		386FEB9523ED78D400A13A5C /* AnchorKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9423ED78D400A13A5C /* AnchorKeyView.swift */; };
-		386FEB9723ED960000A13A5C /* SPrefKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9623ED960000A13A5C /* SPrefKeyView.swift */; };
+		386FEB9923EDA0B900A13A5C /* ScrollingGridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9823EDA0B900A13A5C /* ScrollingGridStack.swift */; };
+		386FEB9B23EDAFEB00A13A5C /* PreferenceStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9A23EDAFEB00A13A5C /* PreferenceStuff.swift */; };
+		386FEB9D23EDBBE800A13A5C /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9023ED704400A13A5C /* GridStack.swift */; };
+		386FEB9E23EDBBF000A13A5C /* PrefKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB6423ECFF0B00A13A5C /* PrefKeyView.swift */; };
+		386FEB9F23EDBBF400A13A5C /* SPrefKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9623ED960000A13A5C /* SPrefKeyView.swift */; };
+		386FEBA023EDBBF700A13A5C /* AnchorKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386FEB9423ED78D400A13A5C /* AnchorKeyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		386FEB9223ED768E00A13A5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		386FEB9423ED78D400A13A5C /* AnchorKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorKeyView.swift; sourceTree = "<group>"; };
 		386FEB9623ED960000A13A5C /* SPrefKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPrefKeyView.swift; sourceTree = "<group>"; };
+		386FEB9823EDA0B900A13A5C /* ScrollingGridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingGridStack.swift; sourceTree = "<group>"; };
+		386FEB9A23EDAFEB00A13A5C /* PreferenceStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceStuff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				386FEB6023ECFF0B00A13A5C /* AppDelegate.swift */,
 				386FEB9023ED704400A13A5C /* GridStack.swift */,
+				386FEB9823EDA0B900A13A5C /* ScrollingGridStack.swift */,
+				386FEB9A23EDAFEB00A13A5C /* PreferenceStuff.swift */,
 				386FEB6223ECFF0B00A13A5C /* SceneDelegate.swift */,
 				386FEB6423ECFF0B00A13A5C /* PrefKeyView.swift */,
 				386FEB9623ED960000A13A5C /* SPrefKeyView.swift */,
@@ -280,12 +286,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				386FEB6123ECFF0B00A13A5C /* AppDelegate.swift in Sources */,
+				386FEB9F23EDBBF400A13A5C /* SPrefKeyView.swift in Sources */,
+				386FEB9923EDA0B900A13A5C /* ScrollingGridStack.swift in Sources */,
+				386FEB9E23EDBBF000A13A5C /* PrefKeyView.swift in Sources */,
+				386FEB9D23EDBBE800A13A5C /* GridStack.swift in Sources */,
+				386FEBA023EDBBF700A13A5C /* AnchorKeyView.swift in Sources */,
 				386FEB9323ED768E00A13A5C /* ContentView.swift in Sources */,
 				386FEB6323ECFF0B00A13A5C /* SceneDelegate.swift in Sources */,
-				386FEB9723ED960000A13A5C /* SPrefKeyView.swift in Sources */,
-				386FEB9123ED704400A13A5C /* GridStack.swift in Sources */,
-				386FEB6523ECFF0B00A13A5C /* PrefKeyView.swift in Sources */,
-				386FEB9523ED78D400A13A5C /* AnchorKeyView.swift in Sources */,
+				386FEB9B23EDAFEB00A13A5C /* PreferenceStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,7 +29,7 @@ struct SBasicRectView: View {
                 .fill(Color.orange)
                 .frame(width: 514, height: 100)
                 .border(Color.blue)
-                .background(SSizeSetter())
+                .background(SizeSetter())
                 
     }
 }
@@ -85,6 +85,6 @@ struct SMPreferenceKey: PreferenceKey {
 
 struct SPrefKeyView_Previews: PreviewProvider {
     static var previews: some View {
-        PrefKeyView()
+        SPrefKeyView()
     }
 }

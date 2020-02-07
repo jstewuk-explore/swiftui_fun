@@ -22,16 +22,14 @@ struct BasicRectView: View {
                 .fill(Color.orange)
                 .frame(width: 514, height: 100)
                 .border(Color.blue)
-                .background(SizeSetter())
+                .overlay(SizeSetter())
     }
 }
 
-struct SizeSetter: View {
+struct WrappingView: View {
     var body: some View {
-        GeometryReader { d in
-            Rectangle()
-                .fill(Color.clear)
-                .preference(key: MPreferenceKey.self, value: d.size)
+        Group {
+            BasicRectView()
         }
     }
 }
@@ -41,7 +39,7 @@ struct PrefKeyView: View {
     
     var body: some View {
         GeometryReader{ d in
-        BasicRectView()
+        WrappingView()
             .onPreferenceChange(MPreferenceKey.self) { value in
                 self.innerSize = value
                 print("value: \(value)")
@@ -53,16 +51,6 @@ struct PrefKeyView: View {
 }
 
 
-struct MPreferenceKey: PreferenceKey {
-    typealias Value = CGSize
-
-    static var defaultValue = CGSize.zero
-
-    static func reduce(value: inout CGSize, nextValue: () -> CGSize) {
-        print(nextValue())
-        value = nextValue()
-    }
-}
 
 //: Using Geometry reader forces the alignment to be topleading?
 //  GR always gives the size the parent "offers"
