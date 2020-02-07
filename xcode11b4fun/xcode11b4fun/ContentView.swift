@@ -11,7 +11,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
 //        PrefKeyView()
-        AnchorKeyView()
+        
+//        AnchorKeyView()
+        
+        SPrefKeyView() // Simulated scrolling
+        
+        
         
 //        GridStack(rows: 3, columns: 3) { _, _  in
 //            Rectangle()
